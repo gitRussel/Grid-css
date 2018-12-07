@@ -1,6 +1,14 @@
 body {
   font-family: 'Roboto', sans-serif; }
 
+button {
+  display: inline-block;
+  background-image: url("img/menu.svg");
+  width: 33px;
+  height: 33px;
+  background-color: transparent;
+  border: none; }
+
 h2 {
   font-size: 45px; }
 
@@ -22,11 +30,49 @@ p {
   margin-bottom: 0; }
 
 a, input, textarea {
-  font-size: 16/57px; }
+  font-size: 16.57px; }
 
 a {
-  color: white;
-  text-decoration: none; }
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 16px 40px; }
+
+.form {
+  max-width: 620px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.form input, .form textarea {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  padding: 10px 15px;
+  color: #fff;
+  box-sizing: border-box; }
+
+.form textarea {
+  width: 100%; }
+
+.form input {
+  width: 48%; }
+
+.form input::-webkit-input-placeholder, .form textarea::-webkit-input-placeholder {
+  color: #fff; }
+
+.form input::-moz-placeholder, .form textarea::-moz-placeholder {
+  color: #fff; }
+
+.form input:-moz-placeholder, .form textarea:-moz-placeholder {
+  color: #fff; }
+
+.form input:-ms-input-placeholder, .form textarea:-ms-input-placeholder {
+  color: #fff; }
 
 .grid-item-bg {
   background-image: url("img/bg.jpg"); }

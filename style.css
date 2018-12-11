@@ -118,6 +118,7 @@ a, input, textarea {
 .grid-item-human {
   background-image: url("img/bg-human.jpg");
   grid-area: f;
+  min-height: 715px;
   display: flex;
   align-content: space-between;
   flex-wrap: wrap; }

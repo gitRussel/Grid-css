@@ -124,3 +124,35 @@ a, input, textarea {
       background-image: url("img/dribbble.svg"); }
     .list > li > a.list-tw {
       background-image: url("img/twitter.svg"); }
+
+.logo {
+  display: block;
+  width: 90px;
+  height: 90px;
+  background-image: url("img/logo.png");
+  background-repeat: no-repeat; }
+
+.grid {
+  display: grid;
+  grid-template-areas: "a a a a a a b b b" "c c c c d d d d d" "c c c c e e e e e" "f f f g g g g g g"; }
+
+.grid-item-bg {
+  grid-area: a; }
+
+.grid-item-gray {
+  grid-area: b; }
+
+.grid-item-blue {
+  grid-area: c; }
+
+.grid-item-beige {
+  grid-area: d; }
+
+.grid-item-black {
+  grid-area: e; }
+
+.grid-item-human {
+  grid-area: f; }
+
+.grid-item-green {
+  grid-area: g; }

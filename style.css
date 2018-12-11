@@ -32,7 +32,7 @@ p {
 a, input, textarea {
   font-size: 16.57px; }
 
-a {
+.grid-item-black a, .grid-item-beige a {
   color: #fff;
   text-decoration: none;
   border: 1px solid #fff;
@@ -102,3 +102,25 @@ a {
 
 .grid-item-human, .grid-item-green, .grid-item-blue, .grid-item-black {
   color: #fff; }
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start; }
+  .list > li {
+    margin-right: 10px; }
+  .list > li > a {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 45px;
+    display: block;
+    border: none; }
+    .list > li > a.list-fb {
+      background-image: url("img/facebook.svg"); }
+    .list > li > a.list-dr {
+      background-image: url("img/dribbble.svg"); }
+    .list > li > a.list-tw {
+      background-image: url("img/twitter.svg"); }

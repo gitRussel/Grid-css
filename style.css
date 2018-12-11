@@ -7,7 +7,8 @@ button {
   width: 33px;
   height: 33px;
   background-color: transparent;
-  border: none; }
+  border: none;
+  margin-bottom: 64px; }
 
 h2 {
   font-size: 45px; }
@@ -20,14 +21,21 @@ h4 {
 
 h2, h3, h4 {
   font-weight: 200;
-  margin-top: 0; }
+  margin-top: 0;
+  letter-spacing: 1px; }
   h2 span, h3 span, h4 span {
     font-weight: 900; }
+    h2 span.span, h3 span.span, h4 span.span {
+      display: block; }
+
+.grid-item-blue > h2:not(:first-child) {
+  margin-top: 80px; }
 
 p {
   font-size: 15.57px;
   line-height: 28px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  max-width: 555px; }
 
 a, input, textarea {
   font-size: 16.57px; }
@@ -39,7 +47,12 @@ a, input, textarea {
   border-radius: 10px;
   display: inline-block;
   box-sizing: border-box;
-  padding: 16px 40px; }
+  padding: 16px 40px;
+  margin-top: 54px; }
+
+.grid-item-beige a {
+  color: black;
+  border: 1px solid black; }
 
 .form {
   max-width: 620px;
@@ -52,12 +65,13 @@ a, input, textarea {
   border: 1px solid #fff;
   border-radius: 10px;
   margin-bottom: 12px;
-  padding: 10px 15px;
+  padding: 17px 15px;
   color: #fff;
   box-sizing: border-box; }
 
 .form textarea {
-  width: 100%; }
+  width: 100%;
+  height: 158px; }
 
 .form input {
   width: 48%; }
@@ -74,26 +88,52 @@ a, input, textarea {
 .form input:-ms-input-placeholder, .form textarea:-ms-input-placeholder {
   color: #fff; }
 
+.grid {
+  display: grid;
+  grid-template-areas: "a a a a a a b b b" "c c c c d d d d d" "c c c c e e e e e" "f f f g g g g g g"; }
+
 .grid-item-bg {
-  background-image: url("img/bg.jpg"); }
+  background-image: url("img/bg.jpg");
+  grid-area: a; }
 
 .grid-item-gray {
-  background-color: #f3f3f3; }
+  background-color: #f3f3f3;
+  grid-area: b;
+  padding-left: 54px;
+  padding-top: 57px;
+  padding-bottom: 89px; }
 
 .grid-item-blue {
-  background-image: url("img/bg-blue.jpg"); }
+  background-image: url("img/bg-blue.jpg");
+  grid-area: c; }
 
 .grid-item-beige {
-  background-image: url("img/bg-beige.jpg"); }
+  background-image: url("img/bg-beige.jpg");
+  grid-area: d; }
 
 .grid-item-black {
-  background-image: url("img/bg-black.jpg"); }
+  background-image: url("img/bg-black.jpg");
+  grid-area: e; }
 
 .grid-item-human {
-  background-image: url("img/bg-human.jpg"); }
+  background-image: url("img/bg-human.jpg");
+  grid-area: f;
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap; }
+
+.form-container {
+  width: 100%; }
+
+.design-by {
+  width: 100%; }
 
 .grid-item-green {
-  background-image: url("img/bg-green.jpg"); }
+  background-image: url("img/bg-green.jpg");
+  grid-area: g;
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap; }
 
 .grid-item-bg, .grid-item-human, .grid-item-green, .grid-item-blue, .grid-item-beige, .grid-item-black {
   background-size: cover;
@@ -102,6 +142,11 @@ a, input, textarea {
 
 .grid-item-human, .grid-item-green, .grid-item-blue, .grid-item-black {
   color: #fff; }
+
+.grid-item-human, .grid-item-green, .grid-item-beige, .grid-item-blue, .grid-item-black {
+  padding-top: 71px;
+  padding-left: 54px;
+  padding-bottom: 80px; }
 
 .list {
   list-style-type: none;
@@ -117,7 +162,8 @@ a, input, textarea {
     width: 45px;
     height: 45px;
     display: block;
-    border: none; }
+    margin-top: 0;
+    border-radius: 10px; }
     .list > li > a.list-fb {
       background-image: url("img/facebook.svg"); }
     .list > li > a.list-dr {
@@ -128,31 +174,7 @@ a, input, textarea {
 .logo {
   display: block;
   width: 90px;
+  border-radius: 10px;
   height: 90px;
-  background-image: url("img/logo.png");
-  background-repeat: no-repeat; }
-
-.grid {
-  display: grid;
-  grid-template-areas: "a a a a a a b b b" "c c c c d d d d d" "c c c c e e e e e" "f f f g g g g g g"; }
-
-.grid-item-bg {
-  grid-area: a; }
-
-.grid-item-gray {
-  grid-area: b; }
-
-.grid-item-blue {
-  grid-area: c; }
-
-.grid-item-beige {
-  grid-area: d; }
-
-.grid-item-black {
-  grid-area: e; }
-
-.grid-item-human {
-  grid-area: f; }
-
-.grid-item-green {
-  grid-area: g; }
+  background-repeat: no-repeat;
+  background-position: center center; }

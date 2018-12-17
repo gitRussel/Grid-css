@@ -9,8 +9,7 @@ $(document).ready(function() {
         e.prevetDefault;
         var id = $(this).attr('href');
 
-        top = $(id).offset().top;
-        
+        top = $(id).offset().top;        
         $('body,html').animate({scrollTop: top},1500);
     });
 });

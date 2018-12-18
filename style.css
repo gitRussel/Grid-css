@@ -1,6 +1,9 @@
 body {
   font-family: 'Roboto', sans-serif; }
 
+body::-webkit-scrollbar {
+  width: 0; }
+
 .menu-btn {
   display: block;
   position: relative;
@@ -44,6 +47,9 @@ body {
   align-items: flex-start; }
 
 .menu-nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
   margin-top: 3px;
   transition: 0.5s;
   transform: scaleX(0);
@@ -56,9 +62,22 @@ body {
 
 .menu-nav__link {
   text-decoration: none;
+  position: relative;
   display: inline-block;
-  color: black !important;
-  margin-left: 30px; }
+  color: black !important; }
+
+.menu-nav__link::before {
+  content: '';
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #3a4245;
+  transition: 0.2s; }
+
+.menu-nav__link:hover::before {
+  width: 100%; }
 
 h2 {
   font-size: 45px; }
@@ -95,6 +114,9 @@ h2, h3, h4 {
   @media (max-width: 520px) {
     h2, h3, h4 {
       font-size: 25px; } }
+  @media (min-width: 1450px) {
+    h2, h3, h4 {
+      text-align: center; } }
 
 .grid-item-blue > h2:not(:first-child) {
   margin-top: 80px; }
@@ -118,6 +140,9 @@ p {
   @media (max-width: 1024px) {
     p {
       line-height: 19px; } }
+  @media (min-width: 1450px) {
+    p {
+      max-width: 100%; } }
 
 a, input, textarea {
   font-size: 16.57px; }
@@ -135,6 +160,9 @@ a, input, textarea {
   padding: 16px 40px;
   margin-top: 54px; }
 
+.grid-item-black a:hover, .grid-item-beige a:hover {
+  opacity: 0.7; }
+
 .grid-item-beige a {
   color: black;
   border: 1px solid black; }
@@ -144,6 +172,9 @@ a, input, textarea {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
+  @media (min-width: 1450px) {
+    .form {
+      margin: 0 auto; } }
 
 .form input, .form textarea {
   background-color: transparent;
@@ -160,6 +191,10 @@ a, input, textarea {
 
 .form input {
   width: 48%; }
+
+@media (min-width: 1450px) {
+  .contacts {
+    margin: 0 auto; } }
 
 .form input::-webkit-input-placeholder, .form textarea::-webkit-input-placeholder {
   color: #fff; }

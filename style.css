@@ -61,10 +61,14 @@ body::-webkit-scrollbar {
   transform: scaleX(1); }
 
 .menu-nav__link {
+  font-size: 20px;
   text-decoration: none;
   position: relative;
   display: inline-block;
   color: black !important; }
+  @media (max-width: 435px) {
+    .menu-nav__link {
+      font-size: 16px; } }
 
 .menu-nav__link::before {
   content: '';

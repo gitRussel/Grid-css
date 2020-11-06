@@ -1,4 +1,4 @@
 # Grid-css
-Эта страница создана при помощи [GitHub Pages](https://gitrussel.github.io/Grid-css/)
-
-Все исходники взяты с YouTube-канала [loftblog](https://www.youtube.com/watch?v=ZkYhNIxGc8k&list=PLY4rE9dstrJxI-kCaXQnqCjPy4HPNn1DG)
+Эта страница создана при помощи GitHub Pages
+Технологии, которые были задействованы в разработке: Html, css, js, normalize.css, jQuery, CSS Grid Layout
+Посмотреть результат и проверить адаптивность верстки можно по ссылке https://gitrussel.github.io/Grid-css/
